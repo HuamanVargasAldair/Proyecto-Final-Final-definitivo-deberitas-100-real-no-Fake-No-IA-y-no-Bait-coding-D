@@ -59,6 +59,15 @@ public class CatalogoPrendas {
         return true;
     }
 
+    public boolean actualizarPrecio(String codigo, double nuevoPrecio) {
+        Prenda prenda = buscarPorCodigo(codigo);
+        if (prenda == null || nuevoPrecio <= 0) {
+            return false;
+        }
+        prenda.setPrecio(nuevoPrecio);
+        return true;
+    }
+
     public Prenda[] listarPrendas() {
         Prenda[] actuales = new Prenda[cantidadPrendas];
         for (int i = 0; i < cantidadPrendas; i++) {
