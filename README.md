@@ -6,7 +6,7 @@ DESARROLLO: 2/4.
 * Paquetes:
 	- modelo -> Listo
 	- controlador -> Listo
-	- vista -> Pendiente
+	- vista -> Listo
 
 * Folder:
 	- datos -> Pendiente
